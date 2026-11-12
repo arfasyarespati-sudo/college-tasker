@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Tugas Kuliah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Daftar Tugas Kuliah</h2>
+        <form id="formTugas" class="form-group">
+            <input type="text" id="matkul" placeholder="insert Matakuliah.." required>
+            <input type="text" id="judul" placeholder="Judul Tugas" required>
+            <input type="datetime-local" id="deadline" required>
+            <button type="submit" class="btn-tambah">+ Tambah</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                <th>Mata Kuliah</th>
+                <th>Judul Tugas</th>
+                <th>Deadline</th>
+                <th>Status</th>
+                <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="tabelTugas">
+            
+            </tbody>
+        </table>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>
